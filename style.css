@@ -1,0 +1,233 @@
+@charset 'utf-8';
+
+/* common */
+body {
+    margin: 0;
+    font-family: "游明朝体","YuMincho"; 
+}
+
+h1, h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    width: calc(100% - 32px);
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+section h1 {
+    text-align: center;
+    font-size: 32px;
+    padding: 32px 0;
+}
+
+.animate {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity .6s, transform .6s;
+}
+
+.animate.show {
+    opacity: 1;
+    transform: none;
+}
+
+/* header */
+header {
+    padding: 32px 0;
+    /* background: #eee; */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 16px;
+}
+
+.header-sns {
+    font-size: 24px;
+}
+
+.header-sns a + a {
+    margin-left: 10px;
+}
+
+/* hero */
+.hero {
+    padding: 64px 0;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero .desc {
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    margin: 0 auto;
+    font-size: 24px;
+    margin-top: 8px;
+}
+
+.hero .desc p {
+    padding: 8px;
+}
+
+.hero .desc p + p{
+    margin-top: 24px;
+}
+
+.hero .desc p + p + p{
+    margin-top: 48px;
+}
+
+/* features */
+.features {
+    padding: 64px 0;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.features section + section {
+    margin-top: 32px;
+}
+
+.feature {
+    margin: 0 auto;
+    width: calc(100% - 32px);
+    border: 3px solid #aaa;
+    border-radius: 16px;
+    padding: 8px;
+}
+
+/* activities */
+.activities {
+    padding: 64px 0;
+}
+
+.activity {
+    text-align: center;
+    padding: 16px 0;
+}
+
+.activity img {
+    width: 250px;
+    height: auto;
+}
+
+/* voices */
+.voices {
+    padding: 64px 0;
+}
+
+.voices section + section {
+    margin-top: 32px;
+}
+
+.voice {
+    margin: 0 auto;
+    width: calc(100% - 32px);
+    border: 3px solid #aaa;
+    border-radius: 16px;
+    padding: 8px;
+}
+
+.faculty {
+    margin-top: 8px;
+    text-align: right;
+    font-size: 14px;
+}
+
+/* composition */
+.composition {
+    padding: 64px 0;
+}
+
+.composition .container div{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.composition .container div + div{
+    margin-top: 16px;
+}
+
+/* sns */
+
+.sns {
+    padding: 64px 0;
+}
+
+.twitter {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* form */
+.form {
+    margin: 64px 0;
+}
+
+.form .container {
+    text-align: center;
+}
+
+.form a {
+    border-bottom: #000 solid 2px;
+    font-size: 24px;
+}
+
+/* call-to-action */
+.call-to-action {
+    margin: 256px 0;
+}
+
+ .call-to-action h1 {
+    font-size: 24px;
+ }
+
+ .call-to-action div {
+    background: #eee;
+    padding: 128px 0;
+    opacity: 0;
+ }
+
+ /* footer */
+ footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+ }
